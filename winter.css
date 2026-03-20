@@ -1,0 +1,551 @@
+@font-face {
+    font-family: playpen;
+    src: url(fonts/PlaypenSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: greate;
+    src: url(fonts/GreatVibes-Regular.ttf)
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(fonts/RubikBeastly-Regular.ttf)
+}
+
+
+header {
+    background-image: url(img.winter/83183160_9980928.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding: 1px;
+    position: relative;
+}
+
+#снеж1 {
+    position: absolute;
+    top: -150px;
+    left: 25%;
+    animation: foul 5s infinite;
+    animation-delay: 1s;
+
+}
+
+#снеж3 {
+    position: absolute;
+    top: -150px;
+    left: 40%;
+    animation: foul 5s infinite;
+    animation-delay: 1.9s;
+}
+
+
+#снеж2 {
+    position: absolute;
+    top: -150px;
+    left: 60%;
+    animation: foul 5s infinite;
+}
+
+
+#снеж6 {
+    position: absolute;
+    top: -150px;
+    left: 80%;
+    animation: foul 5s infinite;
+    animation-delay: 2.7s;
+}
+
+#снеж5 {
+    position: absolute;
+    top: -150px;
+    left: 95%;
+    animation: foul 5s infinite;
+    animation-delay: 2.3s;
+}
+
+
+#снеж4 {
+    position: absolute;
+    top: -150px;
+    left: 10%;
+    animation: foul 5s infinite;
+    animation-delay: 0.8s;
+}
+
+@keyframes foul {
+    from {
+        top: -150px;
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+    to {
+        top: 100vh;
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 180px;
+    font-size: 60px;
+    color: aliceblue;
+    font-family: playpen;
+    animation: fart 3.2s infinite alternate;
+
+}
+
+@keyframes fart {
+    from {
+        color: aliceblue;
+    }
+
+    40% {
+        color: rgb(66, 121, 202);
+    }
+
+    to {
+        color: aqua;
+    }
+}
+
+#poema {
+    background: linear-gradient(rgba(128, 128, 128, 0.281), rgba(128, 128, 128, 0.719)), url(img.winter/art-2200731_1920.jpg);
+    /* height: 100vh; */
+    background-size: cover;
+    padding: 1px;
+    /* border-top: 20px solid rgb(124, 165, 255); */
+}
+
+#poema p {
+    border: 0px solid rgb(136, 89, 20);
+    width: fit-content;
+    margin-left: 9%;
+    margin-top: 55px;
+    font-size: 30px;
+    font-family: greate;
+    font-weight: 650;
+    letter-spacing: 2px;
+}
+
+#признаки h2 {
+    text-align: center;
+    font-size: 45px;
+    background: linear-gradient(rgb(2, 183, 196), rgb(2, 93, 167), rgb(65, 20, 148), rgb(211, 2, 2));
+    background-clip: text;
+    color: transparent;
+    font-family: playpen;
+    font-weight: 900;
+}
+
+
+li {
+    animation: перелив 1.8s infinite alternate;
+    transition: all 0.5s;
+}
+
+li:first-child {
+    background-image: url(img.winter/thermometer_cold_winter_temperature_icon_175548.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-position: left center;
+}
+
+#признаки a {
+    color: rgb(7, 91, 160);
+    text-decoration: none;
+    animation: перелив 1.8s infinite alternate;
+}
+
+li:nth-child(2) {
+    background-image: url(img.winter/snowflake-icon_22139.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-position: left center;
+}
+
+li:nth-child(3) {
+    background-image: url(img.winter/ice-skate_113377.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-position: left center;
+}
+
+li:last-child {
+    background-image: url(img.winter/santaclaus_108480.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-position: left center;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 42px;
+    font-family: rubik;
+    color: rgb(7, 91, 160);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#признаки {
+    background-color: rgb(170, 200, 224);
+    padding: 50px 0px;
+}
+
+li:hover {
+    transform: scale(1.2);
+
+}
+
+@keyframes перелив {
+    from {
+        color: rgb(26, 147, 247);
+    }
+
+    50% {
+        color: rgb(41, 29, 104);
+    }
+
+    to {
+        color: rgb(190, 31, 204);
+    }
+
+}
+
+#календарь h2 {
+    font-size: 65px;
+    text-align: center;
+    font-family: greate;
+    color: rgb(41, 40, 39);
+    font-weight: 850;
+}
+
+#календарь {
+    background-color: rgb(91, 155, 155);
+    ;
+    padding: 0px 0px 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#календарь table {
+    padding: 15px;
+    border: 10px solid rgb(74, 74, 77);
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 650;
+    border-spacing: 10px;
+}
+
+
+#календарь td {
+    padding: 10px;
+    border: 5px solid rgb(103, 45, 145);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgb(135, 235, 235);
+    transform: scale(1.2) rotate(5deg);
+
+}
+
+body {
+    margin: 0;
+}
+
+#календарь div {
+    position: relative;
+    height: 142px;
+}
+
+#m1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    border-radius: 0 0 20px 20px;
+}
+
+#m2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    border-radius: 0 0 20px 20px;
+}
+
+#m3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    border-radius: 0 0 20px 20px;
+}
+
+#галерея img {
+    border: black 1px solid;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+#галерея img:hover {
+    transform: scale(1.2);
+}
+
+#гал1 {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50% !important;
+    position: absolute;
+    left: calc(50% - 10vw);
+    top: calc(50vh - 10vw);
+    z-index: 1;
+    object-fit: cover;
+    border: wheat 10px solid !important;
+
+
+}
+
+#галерея {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(42, 62, 172);
+
+}
+
+#гал2 {
+    position: absolute;
+    left: calc(50% - 5vw);
+    top: calc(50vh - 5vw);
+    width: 10vw;
+    height: 10vw;
+}
+
+@keyframes anim1 {
+    from {
+        left: calc(50% - 5vw);
+        top: calc(50vh - 5vw);
+    }
+
+    to {
+        top: 0;
+        left: 0;
+        width: 33vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+#гал3 {
+    position: absolute;
+    left: calc(50% - 5vw);
+    top: calc(50vh - 5vw);
+    width: 10vw;
+    height: 10vw;
+}
+
+@keyframes anim2 {
+    from {
+        left: calc(50% - 5vw);
+        top: calc(50vh - 5vw);
+    }
+
+    to {
+        top: 0;
+        left: 33vw;
+        width: 33vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+#гал4 {
+    position: absolute;
+    left: calc(50% - 5vw);
+    top: calc(50vh - 5vw);
+    width: 10vw;
+    height: 10vw;
+
+}
+
+@keyframes anim3 {
+    from {
+        left: calc(50% - 5vw);
+        top: calc(50vh - 5vw);
+    }
+
+    to {
+        top: 0;
+        left: 66vw;
+        width: 34vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+#гал5 {
+    position: absolute;
+    left: calc(50% - 5vw);
+    top: calc(50vh - 5vw);
+    width: 10vw;
+    height: 10vw;
+
+}
+
+@keyframes anim4 {
+    from {
+        left: calc(50% - 5vw);
+        top: calc(50vh - 5vw);
+    }
+
+    to {
+        top: 50vh;
+        left: 0vw;
+        width: 33vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+#гал6 {
+    position: absolute;
+    left: calc(50% - 5vw);
+    top: calc(50vh - 5vw);
+    width: 10vw;
+    height: 10vw;
+
+}
+
+@keyframes anim5 {
+    from {
+        left: calc(50% - 5vw);
+        top: calc(50vh - 5vw);
+    }
+
+    to {
+        top: 50vh;
+        left: 33vw;
+        width: 33vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+
+#гал7 {
+    position: absolute;
+    left: calc(50% - 5vw);
+    top: calc(50vh - 5vw);
+    width: 10vw;
+    height: 10vw;
+
+}
+
+@keyframes anim6 {
+    from {
+        left: calc(50% - 5vw);
+        top: calc(50vh - 5vw);
+    }
+
+    to {
+        top: 50vh;
+        left: 66vw;
+        width: 34vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+.гал2 {
+    animation: anim1 5s forwards;
+}
+
+.гал3 {
+    animation: anim2 5s forwards;
+    animation-delay: 1s;
+}
+
+.гал4 {
+    animation: anim3 5s forwards;
+    animation-delay: 1.5s;
+}
+
+.гал5 {
+    animation: anim4 5s forwards;
+    animation-delay: 2s;
+}
+
+.гал6 {
+    animation: anim5 5s forwards;
+    animation-delay: 2.5s;
+}
+
+.гал7 {
+    animation: anim6 5s forwards;
+    animation-delay: 3s;
+}
+
+#ифрейм {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: left;
+    background-image: url(img.winter/winter-5892335.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -100px;
+}
+
+#ифрейм iframe {
+    /* width: 50%;
+    height: 100%; */
+    display: block;
+    background-color: rgba(240, 248, 255, 0);
+    margin-left: -100px;
+}
+
+footer {
+    padding: 50px;
+    background-color: rgb(36, 33, 30);
+    display:flex;
+    justify-content: space-between;
+}
+
+footer h2 {
+    color: snow;
+}
+
+#контакты a {
+    color: snow;
+    text-decoration: none;
+}
+
+#год {
+    align-self:flex-end;
+    margin-bottom: 0;
+}
+
+.социал {
+    display: flex;
+    gap: 30px;
+}
+
+.социал img {
+    width: 100px;
+    height: 100px;
+}
+

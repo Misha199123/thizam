@@ -1,0 +1,223 @@
+   @font-face {
+       font-family: playpen;
+       src: url(fonts/Kablammo-Regular-VariableFont_MORF.ttf);
+
+   }
+
+   @font-face {
+       font-family: riko;
+       src: url(fonts/MarckScript-Regular.ttf);
+   }
+
+   @font-face {
+       font-family: stix1;
+       src: url(fonts/GreatVibes-Regular.ttf);
+   }
+
+
+
+
+   header {
+       background-image: url(img.summer/29023265_7516590.jpg);
+       height: 100vh;
+       background-size: cover;
+       padding: 1px;
+       position: relative;
+   }
+
+   h1 {
+       text-align: center;
+       margin-top: 260px;
+       font-size: 90px;
+       font-family: playpen;
+       color: rgb(54, 190, 13);
+       animation: cori 1.7s infinite alternate;
+   }
+
+   @keyframes cori {
+       from {
+           color: rgb(46, 161, 11);
+       }
+
+       to {
+           color: rgb(212, 199, 12);
+       }
+
+   }
+
+   #слайды {
+       background-image: url(img.summer/13955498_5402866.jpg);
+       padding: 1px;
+       height: 100vh;
+       background-size: cover;
+       border-top: 20px dotted orange;
+       position: relative;
+   }
+
+   #слайды img {
+       width: 21%;
+       height: 33%;
+       object-fit: cover;
+       position: absolute;
+   }
+
+   #слайды img {
+       border: 8px solid gold;
+       animation: corm 3.5s infinite alternate;
+   }
+
+
+   @keyframes corm {
+       from {
+           color: gold;
+       }
+
+       to {
+           color: rgb(35, 187, 4);
+       }
+   }
+
+   #картинка1 {
+       top: 75px;
+       left: 6%;
+       border-radius: 60%;
+   }
+
+   #картинка2 {
+       top: 300px;
+       left: 30%;
+       border-radius: 60%;
+
+   }
+
+   #картинка3 {
+       top: 75px;
+       left: 53%;
+       border-radius: 60%;
+   }
+
+   #картинка4 {
+       top: 300px;
+       left: 75%;
+       border-radius: 60%;
+   }
+
+
+   body {
+       margin: 0;
+   }
+
+   #слайды img:hover {
+       transform: scale(1.1);
+       transition: all 1s;
+   }
+
+   #картинки {
+       padding: 1px;
+   }
+
+   #картинки div {
+       display: flex;
+       justify-content: space-evenly;
+       margin-bottom: 30px;
+   }
+
+   #картинки img {
+       width: 30%;
+   }
+
+   #картинки h2 {
+       text-align: center;
+       font-family: riko;
+       font-size: 50px;
+       margin-top: 120px;
+   }
+
+   #стих {
+       padding: 1px;
+       background-image: linear-gradient(rgba(22, 21, 21, 0.445), rgba(36, 34, 34, 0.493)), url(img.summer/forest-6706559_1920.jpg);
+       height: 100vh;
+       background-size: cover;
+       display: flex;
+       justify-content: center;
+   }
+
+   #стих1 {
+       color: wheat;
+       font-family: stix1;
+       margin-top: 5vh;
+       font-size: 35px;
+       font-weight: 520;
+   }
+
+   .video-conteiner {
+       display: flex;
+       max-width: 1200px;
+       margin: 50px auto;
+       padding: 30px;
+       background: #f5f5f5;
+       border-radius: 15px;
+       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+       height: 600px;
+   }
+
+   .buttons-conteiner {
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       width: 250px;
+       padding-right: 30px;
+   }
+
+   .video-wrapper {
+       flex: 1;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: #000;
+       border-radius: 10px;
+       overflow: hidden;
+
+   }
+
+   .video-player {
+       width: 100%;
+       height: 100%;
+       /* max-width: 800px;
+       max-height: 500px; */
+       object-fit: contain;
+       display: none;
+   }
+
+   .video-player.active {
+       display: block;
+   }
+
+   .btn-video {
+       padding: 15px 25px;
+       font-size: 16px;
+       font-weight: bold;
+       color: white;
+       background: linear-gradient(45deg, #667eea 0%, #674ba2 100%);
+       border: 0;
+       border-radius: 10px;
+       cursor: pointer;
+       transition: all 0.3s ease;
+       box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+   }
+
+   .btn-video:hover {
+       transform: translateY(-3px);
+       box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+   }
+
+   .btn-video.active {
+       background: linear-gradient(45deg, #ff6b6b 0%, #ee5a52 100%);
+       box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+   }
+
+   .no-video {
+    color:#666;
+    font-size: 18px;
+    text-align: center;
+   }
