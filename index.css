@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes tiktak {
+    form {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@font-face {
+    font-family: playpen;
+    src: url(fonts/PlaypenSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: fac;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+
+body {
+    background-image: url(img/gastoninaui-seasons-of-the-year-1127760_1920.jpg);
+    background-size: contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 1px;
+    background-color: rgb(141, 140, 139);
+}
+
+main {
+    padding: 50px;
+    /* background-color: rgba(127, 255, 212, 0.521); */
+    width: fit-content;
+    margin: auto;
+    height: 100vh;
+}
+
+nav {}
+
+a:first-child {
+    top: 145px;
+    left: 30%;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+a:nth-child(2) {
+    top: 145px;
+    left: 66%;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+
+}
+
+a:nth-child(3) {
+    top: 470px;
+    left: 30%;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 5px 5px black;
+}
+
+a:nth-child(4) {
+    top: 470px;
+    left: 66%;
+    color: black;
+}
+
+h1 {
+    color: rgb(104, 170, 187);
+    font-family: playpen;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+
+}
+
+
+
+a {
+    color: rgb(247, 255, 238);
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 20px;
+    position: absolute;
+    text-shadow: 5px 5px 5px black;
+    font-size: 36px;
+    font-family: fac;
+
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+#clock {
+    width: 270px;
+    height: 270px;
+    border-radius: 60px;
+    border: 8px groove orange;
+    margin-top: 60px;
+    position: relative;
+}
+
+#seconds {
+    position: absolute;
+    width: 45%;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    top: calc(50% - 3px);
+    left: 50%;
+    animation: tiktak 60s infinite linear;
+    transform-origin: left;
+}
+
+#minutes {
+    position: absolute;
+    width: 40%;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+    top: calc(50% - 3px);
+    left: 50%;
+    animation: tiktak 3600s infinite linear;
+    transform-origin: left;
+
+}
+

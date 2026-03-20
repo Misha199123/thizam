@@ -1,0 +1,302 @@
+@font-face {
+    font-family: лобстер;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: yesevaone;
+    src: url(fonts/YesevaOne-Regular.ttf);
+}
+
+header {
+    background-image: url(img.spring/pexelsphoto3979186.jpeg);
+    height: 100vh;
+    padding: 1px;
+    background-size: cover;
+    font-family: лобстер;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin-left: 65%;
+    margin-top: 10%;
+    color: rgb(182, 3, 3);
+    font-size: 5vw;
+    text-decoration: underline;
+}
+
+#section1 {
+    background-image: linear-gradient(rgba(22, 21, 21, 0.425), rgba(36, 34, 34, 0.493)), url(img.spring/blossoms-6991112_1920.jpg);
+    padding: 1px;
+    height: 100vh;
+    background-size: cover;
+    font-family: yesevaone;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    /* align-items: center; */
+    font-size: 23px;
+    padding-top: 25vh;
+    box-sizing: border-box;
+}
+
+.st1 {
+    animation: stix1 4s forwards;
+    opacity: 0;
+}
+
+.st2 {
+    animation: stix1 4s forwards;
+    opacity: 0;
+    animation-delay: 3s;
+}
+
+.st3 {
+    animation: stix1 4s forwards;
+    opacity: 0;
+    animation-delay: 5s;
+}
+
+.st4 {
+    animation: stix1 4s forwards;
+    opacity: 0;
+    animation-delay: 7s;
+
+}
+
+@keyframes stix1 {
+    from {
+        opacity: 0;
+        filter: blur(2px);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.st5 {
+    text-align: right;
+    margin-left: 100%;
+    margin-top: 25%;
+    width: 150px;
+    display: flex;
+}
+
+span:first-child {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 11.5s;
+}
+
+span:nth-child(2) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 11.7s;
+}
+
+span:nth-child(3) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 11.9s;
+}
+
+span:nth-child(4) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 12.1s;
+}
+
+span:nth-child(5) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 12.3s;
+}
+
+span:nth-child(6) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 12.5s;
+}
+
+span:nth-child(7) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 12.7s;
+}
+
+span:nth-child(8) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 12.9s;
+}
+
+span:nth-child(9) {
+    animation: stix5 2s forwards;
+    opacity: 0;
+    animation-delay: 13.1s;
+}
+
+
+@keyframes stix5 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#признаки {
+    background-color: rgb(80, 80, 80);
+    padding: 50px;
+    height: 100vh;
+    box-sizing: border-box;
+
+
+}
+
+figure {
+    width: 24%;
+    margin: 0;
+    /* border: 5px solid red;
+    overflow:hidden */
+    position: relative;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+figure img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+
+#признаки h2 {
+    text-align: center;
+    font-family: yesevaone;
+    color: rgb(182, 182, 176);
+    text-shadow: 1px 12px 12px rgb(0, 0, 0);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#признаки div {
+    display: flex;
+    justify-content: space-between;
+}
+
+figcaption {
+    margin-top: -50px;
+    text-align: center;
+    font-family: yesevaone;
+    color: rgb(224, 255, 255);
+    font-size: 20px;
+    background-color: rgba(16, 141, 141, 0.507);
+    z-index: 1;
+    position: relative;
+    padding: 5px;
+
+}
+
+#признаки figure:hover {
+    transform: translateY(-25px);
+}
+
+
+#признаки a {
+    text-decoration: none;
+}
+
+#ссылки a {
+    padding: 50px;
+    text-decoration: none;
+    font-family: лобстер;
+    color: snow;
+    font-size: 30px;
+    background-color: rgb(48, 95, 95);
+    border-radius: 40px;
+    width: 30%;
+    text-align: center;
+    transition: all 0.5s;
+    box-shadow: 5px 5px 5px 5px rgb(97, 96, 96), -5px -5px 5px 5px rgb(97, 96, 96)
+}
+
+#ссылки {
+    padding: 1px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 80, 80);
+    margin-top: 5px;
+    padding-top: 25px;
+
+
+
+}
+
+#ссылки a:hover {
+box-shadow: none;
+transform: scale(1.1);
+}
+
+#video {
+    padding: 50px 0;
+    text-align: center;
+    background-color:rgb(80, 80, 80);
+    margin-top: 5px;
+}
+
+video {
+    border: 15px solid;
+    animation: borderanim 5s infinite alternate;
+    width: 80%;
+    
+}
+
+@keyframes borderanim {
+    from {
+        border-color:  rgb(5, 77, 145);
+    }
+    50% {
+        border-color: rgb(143, 218, 23);
+    }
+
+    to {
+        border-color: rgb(161, 243, 243);
+    }
+}
+
+#img {
+    background-color: rgb(121, 104, 83);
+    text-align: center;
+    padding: 50px;
+    
+}
+#img img {
+    width: 80%;
+}
+
+footer {
+    padding: 60px;
+    background-color: rgb(20, 19, 19);
+    text-align: center;
+    font-size: 20px;
+    
+
+}
+footer a {
+ color: rgb(255, 255, 255);
+ 
+}
